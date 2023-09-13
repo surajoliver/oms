@@ -2,3 +2,4 @@
 /tests/
 /writable/*
 /public/
+.env
