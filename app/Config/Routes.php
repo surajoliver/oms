@@ -10,12 +10,13 @@ use App\Controllers\Products;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/shop', 'Shop::index');
+
 $routes->get('products/new', 'Products::new');
 $routes->post('products/create', 'Products::create');
 $routes->get('products/edit/(:segment)', 'Products::edit/$1');
 $routes->post('products/store', 'Products::store');
 $routes->get('products/delete/(:segment)', 'Products::delete/$1');
+$routes->get('products', 'Products::index');
 
-$routes->get('/admin/products', 'Products::index');
 $routes->get('/admin', 'Admin::index');
 

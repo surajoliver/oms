@@ -15,7 +15,7 @@
             <div class="mb-4">
                 <label class="block text-gray-600 text-sm font-semibold mb-2" for="phone">Description</label>
                 <textarea id="description" name="description" class="border border-gray-300 rounded-md px-4 py-2 w-full"><?php echo $product['description']; ?> </textarea>
-            <?php if($this->validator->hasError('description')): ?>
+            <?php if($this->request->getMethod() === "post" && $this->validator->hasError('description')): ?>
 				<div class="alert alert-danger"><?= $this->validator->getError('description'); ?></div>
 			<?php endif; ?>
 

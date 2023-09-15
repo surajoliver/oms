@@ -1,3 +1,5 @@
+<!--   /Views/products/create.php   -->
+
 <div class="max-w-md mx-auto bg-white p-4 shadow-md rounded-lg">
         <h1 class="text-2xl font-semibold mb-4"><?= esc($title); ?></h1>
 		<?= session()->getFlashdata('error') ?>

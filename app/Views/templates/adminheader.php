@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative Art Gallery - Admin</title>
+	<link rel="stylesheet" text="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- JavaScript files -->
 	<script src="https://cdn.tailwindcss.com"></script>
     <!--script src="main.js" defer></script-->
@@ -16,10 +17,10 @@
         		<nav class="navbar">
             		<ul class="flex gap-4">
                 		<li><a href="/">View Site</a></li>
-                		<li><a href="/admin/products">Product</a></li>
-                		<li><a href="/admin/customers">Customer</a></li>
-						<li><a href="/admin/users">Users</a></li>
-						<li><a href="/admin/orders">Orders</a></li>
+                		<li><a href="products">Product</a></li>
+                		<li><a href="customers">Customer</a></li>
+						<li><a href="users">Users</a></li>
+						<li><a href="orders">Orders</a></li>
 						<li><a href="/admin/dashboard">Dashboard</a></li>
             		</ul>
         		</nav>

@@ -1,1 +1,1 @@
-<p>Inside admin page </p>
+<div class="h-screen"></div>

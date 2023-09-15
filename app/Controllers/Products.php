@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+// /Controllers/Products.php
 
 use App\Models\ProductModel;
 use CodeIgniter\Exception\PageNotFoundException;
@@ -112,9 +113,12 @@ class Products extends BaseController
 			'price' => $post1['price'],
 		]);
 
-		return view('templates/adminheader', ['title' => 'Create a Product Item'])
-			.view('products/success')
-			.view('templates/adminfooter');
+		$message = ['message' => 'Record saved successfully!'];
+		session()->setFlasdata($message);
+		return redirect()->('products/index');
+		#return view('templates/adminheader', ['title' => 'Create a Product Item'])
+		#	.view('products/success')
+		#	.view('templates/adminfooter');
 	}
 }
 

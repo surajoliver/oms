@@ -20,14 +20,4 @@ class Admin extends BaseController
 			.view('templates/adminfooter');
     }
 
-	public function products()
-	{
-		$data = [
-			'title' => 'Products'
-		];
-
-		return view('templates/adminheader')
-			.view('admin/products', $data)
-			.view('templates/adminfooter');
-	}
 }
